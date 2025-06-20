@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Rahma - Front End Developer</title>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+  <link rel="stylesheet" href="portofolio.css" />
+  <script defer src="portofolio.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Nur Rahma</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="Portofolio2.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h1>Hello, I am <span>Nur Rahma</span></h1>
+      <h2>Front End Developer</h2>
+      <p>I am a student from Universitas Negeri Jakarta majoring in Informatics and Computer Education, currently in semester 8.</p>
+      <button class="btn">Download CV</button>
+    </div>
+    <div class="hero-image">
+      <img src="gambar1.jpg" alt="Nur Rahma" />
+    </div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="skills">
+      <p>UI/UX</p>
+      <div class="progress"><div class="bar" style="width: 90%"></div></div>
+      <p>Web Design</p>
+      <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      <p>App Design</p>
+      <div class="progress"><div class="bar" style="width: 95%"></div></div>
+      <p>Graphic Design</p>
+      <div class="progress"><div class="bar" style="width: 80%"></div></div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="service-cards">
+      <div class="card" data-aos="zoom-in">UI/UX</div>
+      <div class="card">Graphics</div>
+      <div class="card">Web Design</div>
+      <div class="card">Development</div>
+      <div class="card">Creative Solutions</div>
+      <div class="card">App Design</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn active" data-filter="uiux">UI/UX</button>
+      <button class="filter-btn active" data-filter="app">App Design</button>
+      <button class="filter-btn active" data-filter="graphic">Graphic Design</button>
+    </div>
+    <div class="project-gallery">
+      <div class="service-cards">
+        <div class="card" data-aos="zoom-in">UI/UX</div>
+        <div class="card" data-aos="zoom-in">Graphics</div>
+        <div class="card" data-aos="zoom-in">Web Design</div>
+      </div>      
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>&copy; 2025 Nur Rahma</p>
+  </footer>
+</body>
+</html>
