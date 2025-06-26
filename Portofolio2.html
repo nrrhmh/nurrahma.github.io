@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Nur Rahma</title>
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    });
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="portofolio.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Nur Rahma</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="portofolio.html">Home</a></li>
+        <li><a href="portofolio.html#Project">Project</a></li>
+        <li><a href="portofolio.html#Sertifikasi">Sertifikasi</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main>
+    <section class="contact-section" id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p class="contact-description">Let's connect! Feel free to reach out for collaboration or just say hello 👋</p>
+
+      <form class="contact-form" id="waForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn">Send via WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Nur Rahma</p>
+  </footer>
+
+  <!-- WhatsApp Form Script -->
+  <script>
+    document.getElementById('waForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const phone = '6287728152248'; 
+
+      const text = `Hello, my name is *${name}* (%0AEmail: ${email})%0A%0A${message}`;
+      const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+      window.open(waLink, '_blank');
+    });
+  </script>
+</body>
+</html>

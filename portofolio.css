@@ -1,0 +1,292 @@
+/* ========== RESET & DASAR ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ========== HEADER / NAVIGASI ========== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0d1117;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  font-weight: bold;
+}
+
+nav a,
+nav button {
+  color: #58a6ff;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  color: #c9d1d9;
+}
+
+.hero-img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+  padding-left: 2rem;
+}
+
+/* ========== CARD / PROJECT ========== */
+.card {
+  background-color: #161b22;
+  padding: 1rem 1.5rem;
+  margin: 1rem 2rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #6e7681;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #8b949e;
+  margin-bottom: 0.75rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== BUTTON: VIEW / RESUME / SERTIFIKAT ========== */
+.view-btn,
+.cert-btn,
+.resume-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.view-btn {
+  background-color: #238636;
+}
+
+.view-btn:hover {
+  background-color: #2ea043;
+}
+
+.resume-btn {
+  background: linear-gradient(135deg, #238636, #2ea043);
+  font-size: 1rem;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.cert-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.cert-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #21262d;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #161b22;
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  color: #58a6ff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  text-align: center;
+  color: #8b949e;
+  margin-bottom: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  color: #c9d1d9;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6e7681;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #2ea043;
+}
+
+/* ========== DARK MODE ========== */
+body.dark-mode {
+  background-color: #ffffff;
+  color: #0d1117;
+}
+
+body.dark-mode .card {
+  background-color: #f3f3f3;
+}
+
+body.dark-mode nav a,
+body.dark-mode nav button,
+body.dark-mode .cta-btn,
+body.dark-mode .socials a,
+body.dark-mode .cert-btn,
+body.dark-mode .resume-btn {
+  color: #0d1117;
+}
+
+body.dark-mode .resume-btn {
+  background: linear-gradient(135deg, #1f883d, #2ea043);
+}
+
+body.dark-mode .cert-btn {
+  background: linear-gradient(135deg, #0d74d1, #58a6ff);
+}
+
+body.dark-mode .cert-btn:hover {
+  background: linear-gradient(135deg, #105ba3, #3a8ce6);
+}
+
+body.dark-mode .hero h1 {
+  color: #0d1117;
+}
+
+body.dark-mode .hero p {
+  color: #2c2f33;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #f3f3f3;
+  color: #0d1117;
+  border-color: #cccccc;
+}
